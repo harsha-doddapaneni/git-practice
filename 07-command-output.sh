@@ -2,4 +2,4 @@
 
 DATE=$(date +%F)
 
-echo "today date is: $DATE"
+echo "Today's date: $DATE"
