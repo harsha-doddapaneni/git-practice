@@ -19,20 +19,21 @@ VALIDATE(){
         echo -e "$2 is...$R FAILED $N"
         exit 1
     else
-        echo -e "$2 is...$G SUCCESS $N"
+        echo -e "$2 is... $G SUCCESS $N"
     fi
 }
 
 CHECK_ROOT
 
-for package in $@
+# sh 15-loops.sh git mysql postfix nginx
+for package in $@ # $@ refers to all arguments passed to it
 do
     dnf list installed $package
     if [ $? -ne 0 ]
     then
-        echo "$package is not installed..going to install it.."
+        echo "$package is not installed, going to install it.."
         dnf install $package -y
-        VALIDATE $? "installing $package"
+        VALIDATE $? "Installing $package"
     else
         echo "$package is already installed..nothing to do"
     fi
