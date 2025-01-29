@@ -38,7 +38,7 @@ then
     if [ $? -ne 0 ]
     then
         echo "mysql installation is failure...please check it.."
-        exit 1"
+        exit 1
     else
         echo "mysql installation is success"
     fi
