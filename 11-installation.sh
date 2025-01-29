@@ -10,6 +10,8 @@ fi
 
 dnf list installed git
 
+echo $?
+
 if [ $? -ne 0 ]
 then
     echo "git is not installed, going to install it.."
