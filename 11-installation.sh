@@ -2,13 +2,14 @@
 
 USERID=$(id -u)
 #echo "USERID is: $USERID"
-if [ $USERID -ne 0 ] #1001
+if [ $USERID -ne 0 ] #0
 then
     echo "please run this script with root priveleges"
-    exit 1
+    exit 0
 fi
 
-echo $?
+echo $? #0
+
 #dnf list installed git
 
 # if [ $? -ne 0 ]
