@@ -8,6 +8,8 @@ then
     exit 1
 fi
 
+echo $?
+
 dnf list installed git
 
 echo $?
