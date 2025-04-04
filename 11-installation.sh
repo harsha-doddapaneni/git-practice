@@ -9,3 +9,5 @@ then
 fi
 
 dnf install git -y
+
+echo $?
