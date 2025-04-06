@@ -19,3 +19,13 @@ then
     USAGE
 fi
 
+if [ ! -d $SOURCE_DIR ]
+then
+    echo "$SOURCE_DIR does not exist...Please check it.."
+fi
+
+if [ ! -d $DEST_DIR ]
+then
+    echo "$DEST_DIR does not exist...Please check it.."
+fi
+
