@@ -29,3 +29,11 @@ then
     echo "$DEST_DIR does not exist...Please check it.."
 fi
 
+FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +$DAYS)
+
+if [ -n $FILES ]
+then
+    echo "Files are found"
+else
+    echo "NO files older than $DAYS"
+fi
