@@ -31,6 +31,8 @@ fi
 
 FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +$DAYS)
 
+echo "Files: $FILES"
+
 if [ -n $FILES ]
 then
     echo "Files are found"
