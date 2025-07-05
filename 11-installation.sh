@@ -1,7 +1,7 @@
 #!/bin/bash
 
-USERID=$(id -u)
-echo "User ID is: $USERID"
+USERID=$(id -u) #1001 --> normal
+echo "User ID is: $USERID" # 0 ---> sudo root user
 
 if [ $USERID -ne 0 ]
 then
