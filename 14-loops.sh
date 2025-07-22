@@ -16,8 +16,3 @@ done
 # echo "9"
 # echo "10"
 # echo "11"
-
-for i in {0..5000}
-do
-	echo $i
-done
