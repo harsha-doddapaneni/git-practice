@@ -16,3 +16,8 @@ done
 # echo "9"
 # echo "10"
 # echo "11"
+
+for i in {0..1000}
+do
+	echo $i
+done
